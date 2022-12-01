@@ -20,7 +20,7 @@ use App\Http\Controllers\AccountController;
 |
 */
 
-Route::get('/', [TeamController::class, 'index']);
+Route::get('/top', [TeamController::class, 'index']);
 //Route::get('/', [StudiumController::class, 'index']);
 
 //Route::get('/', function () {

@@ -8,12 +8,35 @@
         </head>
         <body>
             <h1>チケット検索</h1>
-            <input type="date" name="matchday">
-            <select name="team">
-                @foreach ($teams as $team)
-                    <option value="team">{{ $team->name }}</option>
-                @endforeach
-            </select>
+            <div>
+                <label for="">試合開催日
+                    <input type="date" name="matchday">
+                </label>
+            </div>
+            <div>
+                <label for="">ホームチーム
+                <div>
+                    <select name="team">
+                        @foreach ($teams as $team)
+                            <option value="team">{{ $team->name }}</option>
+                        @endforeach
+                    </select>
+                </div>
+                </label>
+            </div>
+            <div>
+                <label for="">ビジターチーム
+                <div>
+                    <select name="team">
+                        @foreach ($teams as $team)
+                            <option value="team">{{ $team->name }}</option>
+                        @endforeach
+                    </select>
+                </div>
+                </label>
+            </div>
+            <div>
+                <input type="submit" class="btn" value="検索">
             </div>
         </body>
     </html>
