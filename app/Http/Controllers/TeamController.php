@@ -10,7 +10,7 @@ class TeamController extends Controller
 {
     public function index(Team $team)
     {
-        return view('tickets/search')->with(['teams' => $team->get()]);
+        return view('tickets/search')->with(['teams' => $team->get(),]);
     }
     //
 }
