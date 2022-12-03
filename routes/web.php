@@ -21,11 +21,11 @@ use App\Http\Controllers\AccountController;
 */
 
 Route::get('/top', [TeamController::class, 'index']);
-//Route::get('/', [StudiumController::class, 'index']);
 
 //Route::get('/', function () {
     //return view('welcome');
 //});
+Route::get('/index', [TicketController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
