@@ -35,8 +35,6 @@
                 </div>
                 </label>
             </div>
-            <div>
-                <input type="submit" class="btn" value="検索">
-            </div>
+            <button onclick="location.href='/index'">検索</button>
         </body>
     </html>
