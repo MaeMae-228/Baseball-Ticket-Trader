@@ -9,4 +9,14 @@ class Team extends Model
 {
     use HasFactory;
     
+    public function tickets()
+    {
+        return $this->hasMany(Ticket::class);
+    }
+    
+    public function studium()
+    {
+        return $this->belongsTo(Studium::class);
+    }
+    
 }
