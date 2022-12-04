@@ -8,9 +8,11 @@ use App\Models\Ticket;
 
 class TicketController extends Controller
 {
-    public function index(Ticket $ticket)
-    {
-        return view('tickets/index')->with(['tickets' => $ticket->get()]);
-    }
-    //
+    //public function index(Request $request)
+    //{
+        //return view('tickets/index')->with(['requests' => $request->get()]);
+    //}
+    public function index(Request $request){
+        dd($request);
+}
 }
